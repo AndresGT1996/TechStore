@@ -32,9 +32,13 @@ header{
     padding-right: 18px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .contacto i {
         display: none;
+    }
+    .horario { 
+        display: none;
+
     }
 }
 
