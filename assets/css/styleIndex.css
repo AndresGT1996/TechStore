@@ -5,9 +5,7 @@
 
 }
 
-/* body { 
-    background-color: rgba(20, 20, 20, 0.783);
-} */
+
 
 header{
     background-color: rgb(20, 20, 20);
@@ -19,7 +17,7 @@ header{
     flex-direction: row;
     width: 100%;
     background-color: rgb(20, 20, 20);
-    padding: 10px 25px ;
+    padding: 17px 25px ;
     font-size: small;
     border-radius:5px;
 }
@@ -27,28 +25,53 @@ header{
 .contacto{
     display: flex;
     color: rgb(233, 233, 233);
+    padding: 4px 0px;
 }
 
 .contacto div { 
     padding-right: 18px;
 }
 
+@media (max-width: 480px) {
+    .contacto i {
+        display: none;
+    }
+}
+
 .redes a{ 
     padding-right: 15px;
-    font-size: 16px;
+    font-size: 17px;
     color: rgba(243, 242, 242, 0.906);
 }
 
-.nav-bar{ 
-    white-space: inherit;
+.redes a:hover { 
+ font-size: 19px;
+ color: blue;
+ transition: font-size 1s ease;
+}
+
+.home { font-size: medium;
+    font-weight: bold;
+
+}
+
+.nav-bar { padding: 2px 0;
+    box-shadow: 1px 1px 15px rgb(48, 48, 48)  ;}
+
+.hover-a-nav:hover { background-color: rgba(128, 128, 128, 0.559);
+    border-radius: 7px;
+    padding: 8px;
+
 }
 
 .img-main{
-    height: 5%;
+    height: 50%;
     width: 100%;
-    padding: 15px 5px;
-    border-radius: 17px;
+    padding: 10px 15px 15px;
+    border-radius: 5px;
+  
 }
+
 
 
 .configuracion-img-p { 
@@ -83,9 +106,8 @@ header{
     padding: 7px 50px;
     font-size: 15px;
     border-radius: 8px;
-    background-color: rgba(192, 192, 192, 0.729);
-    
-}
+    background-color: rgba(199, 199, 199, 0.729);
+    }
 
 .configuracion-img-p button:hover{
     background-color: rgb(142, 184, 198);
