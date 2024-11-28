@@ -41,21 +41,12 @@
 }
 
 .img-main{
-    height: 550px;
+    height: 5%;
     width: 100%;
     padding: 15px 5px;
     border-radius: 17px;
 }
 
-/* .configuracion-img {
-    width: 170px;
-
-
-}
-
-.configuracion-p { 
-    text-align: justify;
-} */
 
 .configuracion-img-p { 
     display: flex;
