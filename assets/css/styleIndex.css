@@ -101,3 +101,38 @@ border-radius: 100%;
 padding: 1px 5px;
 color: green;
 }
+.footer {
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Efecto cuando uno pasa el cursor */
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #4d4d4d; /* Línea que divide */
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  .footer-copyright {
+    font-size: 12px;
+    color: #888;
+  }
+  
