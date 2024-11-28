@@ -9,6 +9,9 @@
     background-color: rgba(20, 20, 20, 0.783);
 } */
 
+header{
+    background-color: rgb(20, 20, 20);
+}
 
 .info { 
     display: flex;
@@ -89,3 +92,12 @@
 }
 
 
+#carrito-compras { position: fixed;
+right: 20px;
+bottom: 18px;
+font-size: 35px;
+border: solid 1px green;
+border-radius: 100%;
+padding: 1px 5px;
+color: green;
+}
