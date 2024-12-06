@@ -6,6 +6,13 @@
     <title>TechStore</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+
+    <!-- css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    
 </head>
 <body>
     
@@ -31,76 +38,68 @@
         
     </section>
 
-    <section class="section-p1" id="cart">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remover</td>
-                    <td>Imagen</td>
-                    <td>Producto</td>
-                    <td>Precio</td>
-                    <td>Cantidad</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-                    <td><img src="assets/img/productos/Img-1-pc.jpg" alt="Imagen 1"></td>
-                    <td>Computador Ryzen 5</td>
-                    <td>$3.200.000</td>
-                    <td><input type="number" name="" id="" value="1"></td>
-                    <td>$3.200.000</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-                    <td><img src="assets/img/productos/img-10.jpg" alt="Imagen 2"></td>
-                    <td>TARJETA DE VIDEO NVIDIA 16.0 GB DDR6</td>
-                    <td>$2.625.000</td>
-                    <td><input type="number" name="" id="" value="1"></td>
-                    <td>$2.625.000</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-                    <td><img src="assets/img/productos/img-9.jpg" alt="Imagen 3"></td>
-                    <td>TECLADO USB GENIUS KB 116 BASICO</td>
-                    <td>$36.000</td>
-                    <td><input type="number" name="" id="" value="1"></td>
-                    <td>$36.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    
 
-    <section class="section-p1" id="cart-add">
-        <div id="cupon">
-            <h3>Aplicar cupón</h3>
-            <div>
-                <input type="text" placeholder="Ingresa tu cupón">
-                <button class="normal">Aplicar</button>
+    <div class="col-lg-9">
+        <div class="row">
+
+            <div class="col-md-6 pb-4">
+                <div class="d-flex">
+                    <select id="filtro" class="form-control">
+                        <option value="todas">Todas</option>
+                    <option value="portatil">Portatil</option>
+                    <option value="tv">Tv</option>
+                    <option value="tarjeta grafica">Tarjeta grafica</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="consolas">Consolas</option>
+                    <option value="pantalla">Pantalla</option>
+                        
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div id="subtotal">
-            <h3>Total del carrito</h3>
-            <table>
-                <tr>
-                    <td>Subtotal del carro</td>
-                    <td>$5.861.000</td>
-                </tr>
-                <tr>
-                    <td>Envío</td>
-                    <td>Gratis</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$5.861.000</strong></td>
-                </tr>
-            </table>
-            <button class="normal">Proceder con la compra</button>
+        <!-- productos en el carro -->
+        <!-- fin de productos -->
+         <!-- carrito -->
+         <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h3>Carrito</h3>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: $ <span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    <button class="btn btn-info">
+                    <a href="pago.html" target="target_blank">Pagar</a>
+                    </button>
+                    <button class="btn btn-info">
+                    <a href="https://www.paypal.com/invoice/p/#X9AMTLCL84389TKX" target="target_blank">Pagar</a>
+                    </button>
+    
+                </aside>
+            </div>
         </div>
-    </section>
+<!-- paginacion -->
+        <div class="row">
+            <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                </li>
+            </ul>
+        </div>
 
+    </div>
     <footer class="section-p1">
         <div class="col">
             <img src="assets/img/Logo.png" alt="Logo" class="logo">
@@ -153,5 +152,11 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+     <script src="assets/js/jquery-1.11.0.min.js"></script>
+     <script src="assets/js/templatemo.js"></script>
+     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/carrito.js"></script>
 </body>
 </html>
